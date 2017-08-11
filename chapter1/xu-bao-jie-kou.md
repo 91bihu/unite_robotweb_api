@@ -47,9 +47,9 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 
 ##### 备注说明： {#接口返回数据：}
 
-* **SecCode按照**示例所有的参数升序排列，拼接为一个字符串，再用**MD5**加密，特别注意**SecretKey**参与加密，但不参与参数传递。
+* **SecCode 按照**示例所有的参数升序排列，拼接为一个字符串，再用**MD5**加密，特别注意**SecretKey**参与加密，但不参与参数传递。
 
-* **SecretKey**获取方式参照「壁虎授权」
+* **SecretKey **获取方式参照「壁虎授权」
 
 * 如果用车牌号续保，车架号和发动号可以不传。
 
@@ -69,7 +69,7 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 | msg | 状态码对应的消息 |
 | RenewalToken | 续保成功，需在请求页面路径中加上`RenewalToken`，作为访问壁虎页面的令 |
 
-根据`HTTP状态码 `判断是否续保成功
+根据`HTTP状态码`判断是否续保成功
 
 | HTTP状态码 | **描述** |
 | :--- | :--- |
@@ -79,8 +79,6 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 | 406 | 验证不通过 |
 | 412 | 参数校验不通过 |
 | 500 | 请求接口内部错误 |
-
-
 
 **示例：**
 
