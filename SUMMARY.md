@@ -9,4 +9,6 @@
   * [退出接口](chapter1/tui-chu-jie-kou.md)
 * [对接方式](dui-jie-fang-shi.md)
 * [附](fu.md)
+  * [MD5](fu/md5.md)
+  * [投保城市](fu/tou-bao-cheng-shi.md)
 
