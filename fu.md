@@ -8,7 +8,15 @@
 
 #### 实例：
 
-目前仅提供 C\# 对接联合登录实例：
+*  C\# 对接联合登录实例：
 
-[实例](https://github.com/91bihu/uniteAutoinsuranceSiteDemo) :[https://github.com/91bihu/uniteAutoinsuranceSiteDemo](https://github.com/91bihu/uniteAutoinsuranceSiteDemo) 
+> 本示例一个控制台程序的联合登录示例
+
+[实例](https://github.com/91bihu/uniteAutoinsuranceSiteDemo) :[https://github.com/91bihu/uniteAutoinsuranceSiteDemo](https://github.com/91bihu/uniteAutoinsuranceSiteDemo)
+
+* Node.js Web 示例
+
+[https://github.com/91bihu/UniteRobot](https://github.com/91bihu/UniteRobot)
+
+
 
