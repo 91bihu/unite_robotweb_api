@@ -16,6 +16,7 @@
 | :--- | :--- | :--- |
 | 报价页面 | /DoQuote/Index | 联合登录后，加上token,既可以输入车牌报价 |
 | 选择险种页面 | /DoQuote/SelectInsuranceNew | 联合登录成功后，携带车辆信息调续保接口，得到续保信息后，直接跳转到此页面 |
+| 列表页面 | /Customer/CheckLis | 客户列表页面 |
 
 
 
