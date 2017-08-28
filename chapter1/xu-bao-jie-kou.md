@@ -34,7 +34,7 @@
 | AgentId | 代理人id | 壁虎提供的顶级代理人ID |
 | Token | 登录时返回的token值 | 登录时返回的token值 |
 | timestamp | 时间戳 | 请求接口当前时间的时间戳\(**unix时间戳**\) |
-| SecCode | 加密串 | SecCode=\(LicenseNo+CityCode+AgentId+Token+TimeStamp+**SecretKey**\)按照首字母升序排列后进行MD5并且编码格式为UTF-8 |
+| SecCode | 加密串 | SecCode=\(LicenseNo+CityCode+AgentId+Token+TimeStamp+**secretKey**\)按照首字母升序排列后进行MD5并且编码格式为UTF-8 |
 
 ##### SecCode生成排序实例 {#seccode生成排序实例}
 
@@ -47,9 +47,9 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 
 ##### 备注说明： {#接口返回数据：}
 
-* **SecCode 按照**示例所有的参数升序排列，拼接为一个字符串，再用**MD5**加密，特别注意**SecretKey**参与加密，但不参与参数传递。
+* **SecCode 按照**示例所有的参数升序排列，拼接为一个字符串，再用 **MD5 **加密，特别注意 **secretKey **参与加密，但不参与参数传递。
 
-* **SecretKey **获取方式参照「壁虎授权」
+* **secretKey **获取方式参照「壁虎授权」,**secretKey **参与加密，请注意大小写。
 
 * 如果用车牌号续保，车架号和发动号可以不传。
 
@@ -74,7 +74,7 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 | HTTP状态码 | **描述** |
 | :--- | :--- |
 | 200 | 续保成功 |
-| 204 | 续保失败 |
+| 206 | 续保失败 |
 | 403 | 未授权,服务器拒绝请求 |
 | 406 | 验证不通过 |
 | 412 | 参数校验不通过 |
@@ -83,7 +83,7 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 **示例：**
 
 ```
-http://lzl.91bihu.com/DoQuote/SelectInsuranceNew?Token=XXXX&RenewalToken=XXXX
+http://bao.91bihu.com/DoQuote/SelectInsuranceNew?Token=XXXX&RenewalToken=XXXX
 ```
 
 **Token:**由联合登录接口返回
