@@ -73,8 +73,8 @@ AgentId=11111&Carvin=xxxxxxxxxxxxxxxxxxxxxxxx&CityCode=17&EnginNo=xxxxxxxx&Secre
 
 | HTTP状态码 | **描述** |
 | :--- | :--- |
-| 200 | 续保成功 |
-| 206 | 续保失败 |
+| 200 | 续保成功（获取到上年投保信息、获取到车辆信息） |
+| 206 | 续保失败（需要完善行驶证信息后才能报价） |
 | 403 | 未授权,服务器拒绝请求 |
 | 406 | 验证不通过 |
 | 412 | 参数校验不通过 |
@@ -87,4 +87,6 @@ http://bao.91bihu.com/DoQuote/SelectInsuranceNew?Token=XXXX&RenewalToken=XXXX
 ```
 
 **Token:**由联合登录接口返回
+
+**续保失败**：需要完善车辆信息后才能报价。请跳转到 [http://bao.91bihu.me/DoQuote/ReplenishInfo ](http://bao.91bihu.me/DoQuote/ReplenishInfo)
 
